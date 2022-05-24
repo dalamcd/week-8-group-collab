@@ -1,0 +1,297 @@
+[
+	{
+		"model": "auth.user",
+		"pk": 1,
+		"fields": {
+		  "password": "pbkdf2_sha256$320000$dv70XGQf1H15T9HKi2BdrP$q/7uKKMhBh3eM0qumiw3ogYoGacWv1LLbDyTroV4JYg=",
+		  "last_login": "2022-05-17T15:49:31Z",
+		  "is_superuser": false,
+		  "username": "larry",
+		  "first_name": "",
+		  "last_name": "",
+		  "email": "",
+		  "is_staff": false,
+		  "is_active": true,
+		  "date_joined": "2022-05-17T15:46:57Z",
+		  "groups": [],
+		  "user_permissions": []
+		}
+	  },
+	  {
+		"model": "auth.user",
+		"pk": 2,
+		"fields": {
+		  "password": "pbkdf2_sha256$320000$ueQB32UbHElJIlqFRaHXN2$iUXKRSRnbGEeIWiARtqTdcL5o4xZCfdUIJQgOnwo0do=",
+		  "last_login": null,
+		  "is_superuser": false,
+		  "username": "moe",
+		  "first_name": "",
+		  "last_name": "",
+		  "email": "",
+		  "is_staff": false,
+		  "is_active": true,
+		  "date_joined": "2022-05-17T17:00:00.260Z",
+		  "groups": [],
+		  "user_permissions": []
+		}
+	  },
+	  {
+		"model": "auth.user",
+		"pk": 3,
+		"fields": {
+		  "password": "pbkdf2_sha256$320000$co2VxPZJV6psEDxBi8kinx$CcECo7sxXXNPYI/oDAumTXj11z/a+97DgC2zhP+ivZM=",
+		  "last_login": null,
+		  "is_superuser": false,
+		  "username": "curly",
+		  "first_name": "",
+		  "last_name": "",
+		  "email": "",
+		  "is_staff": false,
+		  "is_active": true,
+		  "date_joined": "2022-05-17T17:00:41.170Z",
+		  "groups": [],
+		  "user_permissions": []
+		}
+	  },
+	  {
+		"model": "authtoken.token",
+		"pk": "0ffa67a387c6b98a8e8165c2115032139af33cdc",
+		"fields": {
+		  "user": 2,
+		  "created": "2022-05-17T17:00:55.417Z"
+		}
+	  },
+	  {
+		"model": "authtoken.token",
+		"pk": "78c1b0485a3b3f5084ff78982de9fc338b074922",
+		"fields": {
+		  "user": 1,
+		  "created": "2022-05-17T16:58:03.331Z"
+		}
+	  },
+	  {
+		"model": "authtoken.token",
+		"pk": "fbc4991f0116bbce44ed9188c6bee36f77efcefc",
+		"fields": {
+		  "user": 3,
+		  "created": "2022-05-17T17:01:00.512Z"
+		}
+	  },
+	{
+		"model": "app_api.genre",
+		"pk": 1,
+		"fields": {
+		  "name": "sci-fi"
+		}
+	},
+	{
+		"model": "app_api.genre",
+		"pk": 2,
+		"fields": {
+		  "name": "horror"
+		}
+	},
+	{
+		"model": "app_api.genre",
+		"pk": 3,
+		"fields": {
+		  "name": "fantasy"
+		}
+	},
+	{
+		"model": "app_api.genre",
+		"pk": 4,
+		"fields": {
+		  "name": "adventure"
+		}
+	},
+	{
+		"model": "app_api.genre",
+		"pk": 5,
+		"fields": {
+		  "name": "romance"
+		}
+	},
+	{
+		"model": "app_api.genre",
+		"pk": 6,
+		"fields": {
+		  "name": "drama"
+		}
+	},
+	{
+		"model": "app_api.genre",
+		"pk": 7,
+		"fields": {
+		  "name": "comedy"
+		}
+	},
+	{
+		"model": "app_api.movie",
+		"pk": 1,
+		"fields": {
+		  "title": "Flight of the Navigator",
+		  "description": "Lorem ipsum",
+		  "run_time": 97,
+		  "user": 1,
+		  "date_released": "1994-04-02",
+		  "genre": 7
+		}
+	},
+	{
+		"model": "app_api.movie",
+		"pk": 2,
+		"fields": {
+		  "title": "Glengarry Glen Ross",
+		  "description": "Lorem ipsum",
+		  "run_time": 100,
+		  "user": 3,
+		  "date_released": "1992-02-10",
+		  "genre": 6
+		}
+	},
+	{
+		"model": "app_api.movie",
+		"pk": 3,
+		"fields": {
+		  "title": "Deadpool",
+		  "description": "Lorem ipsum",
+		  "run_time": 108,
+		  "user": 1,
+		  "date_released": "2016-02-12",
+		  "genre": 5
+		}
+	},
+	{
+		"model": "app_api.movie",
+		"pk": 4,
+		"fields": {
+		  "title": "Indiana Jones and the Last Crusade",
+		  "description": "Lorem ipsum",
+		  "run_time": 128,
+		  "user": 2,
+		  "date_released": "1989-05-24",
+		  "genre": 4
+		}
+	},
+	{
+		"model": "app_api.movie",
+		"pk": 5,
+		"fields": {
+		  "title": "Flight of the Navigator",
+		  "description": "Lorem ipsum",
+		  "run_time": 90,
+		  "user": 1,
+		  "date_released": "1986-08-02",
+		  "genre": 3
+		}
+	},
+	{
+		"model": "app_api.movie",
+		"pk": 6,
+		"fields": {
+		  "title": "The Cabin in the Woods",
+		  "description": "Lorem ipsum",
+		  "run_time": 95,
+		  "user": 2,
+		  "date_released": "2012-04-13",
+		  "genre": 2
+		}
+	},
+	{
+		"model": "app_api.movie",
+		"pk": 7,
+		"fields": {
+		  "title": "The Last Starfighter",
+		  "description": "Lorem ipsum",
+		  "run_time": 101,
+		  "user": 2,
+		  "date_released": "1984-07-13",
+		  "genre": 1
+		}
+	},
+	{
+		"model": "app_api.movie",
+		"pk": 8,
+		"fields": {
+		  "title": "Primer",
+		  "description": "Lorem ipsum",
+		  "run_time": 77,
+		  "user": 1,
+		  "date_released": "2004-10-08",
+		  "genre": 1
+		}
+	},
+	{
+		"model": "app_api.movie",
+		"pk": 9,
+		"fields": {
+		  "title": "It Follows",
+		  "description": "Lorem ipsum",
+		  "run_time": 100,
+		  "user": 3,
+		  "date_released": "2014-05-17",
+		  "genre": 2
+		}
+	},
+	{
+		"model": "app_api.movie",
+		"pk": 10,
+		"fields": {
+		  "title": "Dragonheart",
+		  "description": "Lorem ipsum",
+		  "run_time": 103,
+		  "user": 1,
+		  "date_released": "1996-05-31",
+		  "genre": 3
+		}
+	},
+	{
+		"model": "app_api.movie",
+		"pk": 11,
+		"fields": {
+		  "title": "The Goonies",
+		  "description": "Lorem ipsum",
+		  "run_time": 114,
+		  "user": 2,
+		  "date_released": "1985-06-07",
+		  "genre": 4
+		}
+	},
+	{
+		"model": "app_api.movie",
+		"pk": 12,
+		"fields": {
+		  "title": "Forget Paris",
+		  "description": "Lorem ipsum",
+		  "run_time": 101,
+		  "user": 1,
+		  "date_released": "1995-05-19",
+		  "genre": 5
+		}
+	},
+	{
+		"model": "app_api.movie",
+		"pk": 13,
+		"fields": {
+		  "title": "Doubt",
+		  "description": "Lorem ipsum",
+		  "run_time": 104,
+		  "user": 3,
+		  "date_released": "2008-10-30",
+		  "genre": 6
+		}
+	},
+	{
+		"model": "app_api.movie",
+		"pk": 14,
+		"fields": {
+		  "title": "State and Main",
+		  "description": "Lorem ipsum",
+		  "run_time": 105,
+		  "user": 2,
+		  "date_released": "2000-08-26",
+		  "genre": 7
+		}
+	}
+]
