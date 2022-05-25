@@ -14,7 +14,7 @@ class MovieView(ViewSet):
             movies = movies.filter(genre=genre)
             for movie in movies:
                 genre = Genre.objects.get(pk=movie.genre.id)
-                movie.genre = genre
+                movie.genre_name = genre.name
         serializer = MovieSerializer(movies, many=True)
         return Response(serializer.data)
     def create(self, request):
@@ -34,8 +34,9 @@ class GenreSerializer(serializers.ModelSerializer):
         fields = ('id', 'name')
     
 class MovieSerializer(serializers.ModelSerializer):
+        genre_name = serializers.CharField()
 
         class Meta:
             model = Movie
-            fields = ('id', 'title', 'description', 'run_time', 'user', 'date_released', 'genre')
+            fields = ('id', 'title', 'description', 'run_time', 'user', 'date_released', 'genre', 'genre_name')
             # depth = 1
